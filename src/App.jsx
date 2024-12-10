@@ -63,7 +63,9 @@ const App = () => {
         />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
-    )
+    ), { future: {
+      v7_relativeSplatPath: true
+    }}
   );
 
   return <RouterProvider router={router} />;
